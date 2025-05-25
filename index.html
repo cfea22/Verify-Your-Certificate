@@ -6,28 +6,70 @@
     <title>CFEA Certificate Verification Portal</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Temporary in-page CSS until you create styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .logo {
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .verification-box {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <img src="CFEA.png" alt="Career Foundation Educational Academy Logo" class="logo">
-            <h1>Career Foundation Educational Academy</h1>
-            <p class="address"><i class="fas fa-map-marker-alt"></i> Napet Palli, Imphal East District Manipur-795010</p>
-            <p class="established"><i class="fas fa-calendar-alt"></i> Estd. 2022</p>
-            <p class="registration"><i class="fas fa-id-card"></i> Registration No: <span id="registration-number">425 under I.T Act 1882, Registration Act 1908</span></p>
-            <p class="motto"><i class="fas fa-lightbulb"></i> <em>"Learn Great Skills For Better Future"</em></p>
+        <img src="CFEA.png" alt="CFEA Logo" class="logo">
+        <h1>CAREER FOUNDATION EDUCATIONAL ACADEMY</h1>
+        <p><strong>Estd. 2022</strong></p>
+        <p>Napet Palli, Imphal East District Manipur-795010</p>
+        
+        <div class="motto">
+            <h2>Learn Great Skills For Better Future</h2>
         </div>
 
-        <div class="verification-section">
-            <h2><i class="fas fa-certificate"></i> Certificate Verification</h2>
-            <p>Enter your certificate number to verify:</p>
-            <div class="input-group">
-                <input type="text" id="certID" placeholder="Enter certificate number" />
-                <button onclick="verifyCertificate()">
-                    <i class="fas fa-search"></i> Verify
-                </button>
-            </div>
-            
+        <div class="verification-box">
+            <h3>Certificate Verification</h3>
+            <p>Enter your certificate number:</p>
+            <input type="text" id="certID" placeholder="Certificate number">
+            <button onclick="verifyCertificate()">Verify</button>
             <div id="result">
                 <p id="message"></p>
                 <div id="resultContainer"></div>
@@ -35,8 +77,7 @@
         </div>
 
         <div class="footer">
-            <p class="disclaimer"><i class="fas fa-exclamation-circle"></i> Disclaimer: This portal is intended solely for certificate verification purposes. The institution is not responsible for any misuse of the information provided here.</p>
-            <p class="copyright"><i class="far fa-copyright"></i> 2025-26 Career Foundation Educational Academy. All rights reserved.</p>
+            <p>© 2023/24 Career Foundation Educational Academy. All rights reserved.</p>
         </div>
     </div>
 
