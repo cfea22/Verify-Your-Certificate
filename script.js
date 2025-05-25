@@ -8,10 +8,8 @@ function verifyCertificate() {
         return;
     }
 
-    // Google Apps Script Web App URL (replace with your actual script URL)
-    var scriptUrl = 'https://script.google.com/macros/s/AKfycbzEc5xAZb2ZqCIACp-ofDTXIqIXMH009BwFWIPBoYkUABPI6uxcH6T98YLympCtjH7ICg/exec';
+    var scriptUrl = 'https://script.google.com/macros/s/AKfycbzUwm1LJpE23wBhsx71_RV4rJX7n4zFsZcWm2Q2qO1jlw5oHTOUmmxNvgThf2FG4QtBSQ/exec'; // Replace with your deployed URL
 
-    // Fetch data from Google Apps Script Web App
     fetch(scriptUrl + '?id=' + certID)
         .then(response => response.json())
         .then(data => {
@@ -19,7 +17,18 @@ function verifyCertificate() {
                 resultMessage.innerHTML = data.error;
                 resultMessage.style.color = 'red';
             } else {
-                resultMessage.innerHTML = 'Certificate Verified!<br>Name: ' + data.name + '<br>Course: ' + data.courseName;
+                resultMessage.innerHTML = `
+                    ✅ Certificate Verified!<br>
+                    <strong>Name:</strong> ${data["Name"]}<br>
+                    <strong>Guardian's Name:</strong> ${data["Guardian's Name"]}<br>
+                    <strong>Date of Birth:</strong> ${data["Date of Birth"]}<br>
+                    <strong>Course Name:</strong> ${data["Course Name"]}<br>
+                    <strong>Registration No.:</strong> ${data["Registration No."]}<br>
+                    <strong>Grade:</strong> ${data["Grade"]}<br>
+                    <strong>Course Code:</strong> ${data["Course Code"]}<br>
+                    <strong>Course Duration:</strong> ${data["Course Duration"]}<br>
+                    <strong>Issue Date:</strong> ${data["Issue Date"]}
+                `;
                 resultMessage.style.color = 'green';
             }
         })
