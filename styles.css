@@ -1,3 +1,11 @@
+.logo {
+    width: auto;       /* Let the height control the proportions */
+    height: 80px;      /* Fixed height (adjust as needed) */
+    max-width: 100%;   /* Prevent overflow on small screens */
+    margin: 0 auto 15px auto;
+    display: block;
+    object-fit: contain;
+}
 /* Result Container Styles */
 #resultContainer {
     margin-top: 20px;
