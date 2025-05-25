@@ -1,1 +1,1 @@
-# Verify-Your-Certifucate
+# Verify-Your-Certificate
