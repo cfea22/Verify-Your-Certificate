@@ -21,10 +21,14 @@ body {
     margin-bottom: 20px;
 }
 .logo {
-    width: 100px; /* Adjust size as needed */
+    width: 100px;
+    max-width: 100%;
     height: auto;
     margin-bottom: 10px;
+    object-fit: contain;
+    display: block;
 }
+
 .header h1 {
     font-size: 24px;
     margin: 0;
