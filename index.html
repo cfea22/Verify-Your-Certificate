@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Verification Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Career Foundation Educational Academy</h1>
+            <p>Estd. 2022</p>
+            <p>Registration No: <span id="registration-number">425 under I.T Act 1882 Registration Act 1908</span></p>
+            <p><em>"Learn Great Skills For Better Future"</em></p>
+        </div>
+
+        <h2>Certificate Verification</h2>
+        <p>Enter your certificate number to verify:</p>
+        <input type="text" id="certID" placeholder="Enter certificate number" />
+        <button onclick="verifyCertificate()">Verify</button>
+        
+        <div id="result">
+            <p id="message"></p>
+        </div>
+
+        <div class="footer">
+            <p class="disclaimer">Disclaimer: This portal is intended solely for certificate verification purposes. The institution is not responsible for any misuse of the information provided here.</p>
+            <p class="copyright">© 2022 Career Foundation Educational Academy. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
