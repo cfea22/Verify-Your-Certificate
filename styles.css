@@ -1,11 +1,13 @@
 .logo {
-    max-height: 80px;
+    height: 80px;
     width: auto;
-    max-width: 100%;
-    margin: 0 auto 15px auto;
+    max-width: 250px; /* Optional: cap width too */
     display: block;
+    margin: 0 auto 15px auto;
     object-fit: contain;
+    filter: none; /* Optional: if you think drop-shadow is interfering */
 }
+
 
 
 /* Result Container */
