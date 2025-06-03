@@ -1,12 +1,12 @@
-/* Logo Styling */
 .logo {
+    max-height: 80px;
     width: auto;
-    height: 80px;
     max-width: 100%;
     margin: 0 auto 15px auto;
     display: block;
     object-fit: contain;
 }
+
 
 /* Result Container */
 #resultContainer {
