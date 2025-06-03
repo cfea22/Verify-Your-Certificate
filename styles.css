@@ -7,6 +7,18 @@
     object-fit: contain;
     filter: none; /* Optional: if you think drop-shadow is interfering */
 }
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f2ff 100%);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #d6e4ff;
+}
 
 
 
